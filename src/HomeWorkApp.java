@@ -6,6 +6,8 @@ public class HomeWorkApp {
         checkSumSign();
         printColor();
         compareNumbers();
+        double someOfthing = sum (100, 200);
+        System.out.println(someOfthing);
     }
 
     public static void printThreeWords() {
@@ -69,6 +71,12 @@ public class HomeWorkApp {
             }
 
 
+    }
+    public static  double sum (double x, double y) {
+
+        double result = 0;
+        result = x + y ;
+        return result ;
         }
 
 
