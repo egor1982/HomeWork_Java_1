@@ -1,34 +1,22 @@
 package lesson7;
 
-import java.util.Scanner;
-
 public class Plate {
+
+    public int getFood() {
+        return food;
+    }
+
     private int food;
 
     public Plate(int food) {
         this.food = food;
     }
 
-    public int getFood() {
-        return food;
+    public void info() {
+        System.out.println("Количество еды в миске " + food);
     }
 
-    public int getPlateDecrease(int appetite) {
-        int spread = food - appetite;
-        return spread;
-    }
-
-    public int plateIncrease() {
-       Scanner sc = new Scanner(System.in);
-       int action = sc.nextInt();
-       food += action;
-
-       System.out.println( "Количество еды в тарелке возросло до " + food);
-       return action;
-    }
-
-    void info() {
-
-        System.out.println("Количество еды в тарелке " + food);
+    public void decreaseFood (int appetite) {
+        food -= appetite;
     }
 }
