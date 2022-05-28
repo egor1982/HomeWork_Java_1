@@ -15,7 +15,7 @@ public class Cat {
         if (satiety) {
             System.out.println("наелся и доволен! :)");
         } else {
-            System.out.println("голоден :(");
+            System.out.println("остался голодным :(");
         }
         System.out.println("");
     }
